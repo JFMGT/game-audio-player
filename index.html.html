@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Audio Player – Demo</title>
+  <link rel="stylesheet" href="audioPlayer.css">
+  <style>
+    /* Beispielhafte Anpassung durch Anwender */
+    :root {
+      --ap-accent: #ff6600;
+      --ap-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">🎮 Game Audio Player Demo</h1>
+
+  <div
+    id="audio-a"
+    class="game-audio"
+    data-src="Thingamajig_Audionautix.mp3"
+    data-title="Thingamajig"
+    data-credit="Music by Audionautix.com"
+    data-credit-url="https://audionautix.com/"
+    data-markers='[
+      {"time": 0, "label": "Intro"},
+      {"time": 60, "label": "Phase 1"},
+      {"time": 120, "label": "Phase 2"},
+      {"time": 180, "label": "Ende"}
+    ]'
+  ></div>
+
+  <div
+    id="audio-b"
+    class="game-audio"
+    data-src="TexasTechno_Audionautix.mp3"
+    data-title="Texas Techno"
+    data-credit="Music by Audionautix.com"
+    data-credit-url="https://audionautix.com/"
+    data-markers='[
+      {"time": 0, "label": "Start"},
+      {"time": 45, "label": "Anweisung"},
+      {"time": 150, "label": "Finale"}
+    ]'
+  ></div>
+
+  <script src="audioPlayer.js"></script>
+</body>
+</html>

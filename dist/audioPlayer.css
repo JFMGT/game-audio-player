@@ -1,0 +1,84 @@
+/* ========== audioPlayer.css ========== */
+/* Theme-Variablen */
+:root {
+  --ap-bg: #fff;
+  --ap-text: #1a1a1a;
+  --ap-muted: #777;
+  --ap-accent: #00c2b2;
+  --ap-radius: 12px;
+  --ap-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --ap-font: "Manrope", sans-serif;
+}
+
+/* Container */
+.audio-player {
+  background: var(--ap-bg);
+  border-radius: var(--ap-radius);
+  box-shadow: var(--ap-shadow);
+  padding: 1rem 1.2rem;
+  font-family: var(--ap-font);
+  color: var(--ap-text);
+  margin: 1.5rem auto;
+  max-width: 480px;
+}
+
+/* Titel */
+.audio-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Audioelement */
+.audio-player audio {
+  width: 100%;
+  border-radius: var(--ap-radius);
+  outline: none;
+  margin-bottom: 0.75rem;
+}
+
+/* Marker-Bar */
+.audio-markers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+/* Marker-Button */
+.audio-marker {
+  background: transparent;
+  border: 2px solid var(--ap-accent);
+  color: var(--ap-accent);
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--ap-radius);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.audio-marker:hover {
+  background: var(--ap-accent);
+  color: #fff;
+}
+
+/* Credit-Bereich */
+.audio-credit {
+  font-size: 0.8rem;
+  color: var(--ap-muted);
+  margin-top: 0.75rem;
+  text-align: right;
+}
+
+.audio-credit a {
+  color: var(--ap-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.audio-credit a:hover {
+  color: var(--ap-accent);
+  text-decoration: underline;
+}
+
